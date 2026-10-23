@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fredoka', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFDF9;
+    color: #1E293B;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Claymorphism Tactile Surfaces */
+.clay-surface {
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 14px 28px -8px rgba(148, 163, 184, 0.18),
+    0 4px 10px -2px rgba(148, 163, 184, 0.08),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -4px 8px 0 rgba(226, 232, 240, 0.45);
+}
+
+.clay-card {
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 12px 24px -6px rgba(148, 163, 184, 0.16),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 1),
+    inset 0 -4px 6px 0 rgba(241, 245, 249, 0.8);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 18px 32px -8px rgba(148, 163, 184, 0.24),
+    inset 0 2px 4px 0 rgba(255, 255, 255, 1),
+    inset 0 -4px 8px 0 rgba(226, 232, 240, 0.65);
+}
+
+.clay-pastel-peach {
+  background: linear-gradient(145deg, #FFF5EC 0%, #FFE8D6 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 24px -6px rgba(251, 146, 60, 0.14),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(253, 186, 116, 0.28);
+}
+
+.clay-pastel-mint {
+  background: linear-gradient(145deg, #F0FDF4 0%, #DCFCE7 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 24px -6px rgba(34, 197, 94, 0.12),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(134, 239, 172, 0.28);
+}
+
+.clay-pastel-sky {
+  background: linear-gradient(145deg, #F0F9FF 0%, #E0F2FE 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 24px -6px rgba(14, 165, 233, 0.12),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(125, 211, 252, 0.28);
+}
+
+.clay-pastel-lavender {
+  background: linear-gradient(145deg, #FAF5FF 0%, #F3E8FF 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 24px -6px rgba(168, 85, 247, 0.12),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(216, 180, 254, 0.28);
+}
+
+.clay-pastel-lemon {
+  background: linear-gradient(145deg, #FEFCE8 0%, #FEF08A 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 12px 24px -6px rgba(234, 179, 8, 0.14),
+    inset 0 3px 6px rgba(255, 255, 255, 0.9),
+    inset 0 -4px 8px rgba(253, 224, 71, 0.3);
+}
+
+.clay-btn-primary {
+  background: linear-gradient(180deg, #FF7A59 0%, #F05937 100%);
+  color: #FFFFFF;
+  border-radius: 1rem;
+  box-shadow:
+    0 8px 16px -4px rgba(240, 89, 55, 0.38),
+    inset 0 2px 3px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -3px 5px 0 rgba(180, 48, 20, 0.35);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), opacity 150ms ease;
+}
+
+.clay-btn-primary:hover {
+  transform: translateY(-1.5px);
+}
+
+.clay-btn-primary:active {
+  transform: translateY(1px);
+}
+
+.clay-btn-secondary {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  color: #1E293B;
+  border-radius: 1rem;
+  border: 1.5px solid #E2E8F0;
+  box-shadow:
+    0 6px 12px -4px rgba(100, 116, 139, 0.12),
+    inset 0 2px 2px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -2px 4px 0 rgba(203, 213, 225, 0.4);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clay-btn-secondary:hover {
+  transform: translateY(-1.5px);
+}
+
+.clay-input {
+  background: #FFFFFF;
+  border-radius: 0.875rem;
+  border: 1.5px solid #E2E8F0;
+  box-shadow: inset 0 2px 4px 0 rgba(148, 163, 184, 0.12);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.clay-input:focus {
+  outline: none;
+  border-color: #FF7A59;
+  box-shadow:
+    inset 0 2px 4px 0 rgba(148, 163, 184, 0.08),
+    0 0 0 3px rgba(255, 122, 89, 0.18);
+}

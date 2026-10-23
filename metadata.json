@@ -1,0 +1,6 @@
+{
+  "name": "Kush Art Kids – Educational Books & Creative Activity Store",
+  "description": "Shop children's coloring books, scribbling pads, handwriting practice books, festival activity kits, printable PDFs, personalized birthday return gifts, and custom school books by Kush Art Kids.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
